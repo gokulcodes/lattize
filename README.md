@@ -1,4 +1,4 @@
-![Lattize](https://github.com/gokulcodes/lattize/blob/main/assets/poster.png?raw=true 'Lattize')
+![Lattize](https://github.com/gokulcodes/lattize/blob/main/public/poster.png?raw=true 'Lattize')
 
 # lattize
 A Chrome DevTools extension that shows overall performance metrics of any website. 
