@@ -17,3 +17,5 @@ chrome.devtools.inspectedWindow.eval(
 // chrome.devtools.network.onRequestFinished.addListener((request) => {
 //   console.log("URL:", request.request.url);
 // });
+console.log(chrome.system.cpu.getInfo());
+console.log(chrome.system.memory.getInfo());

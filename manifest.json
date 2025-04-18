@@ -1,23 +1,31 @@
 {
+  "manifest_version": 3,
   "name": "Lattize",
   "description": "A Chrome DevTools extension that shows overall performance metrics of any website. ",
-  "version": "1.0",
-  "devtools_page": "devtools/devtools.html",
-  "manifest_version": 3,
-  "background": {
-    "service_worker": "scripts/background.js"
-  },
-  "action": {
-    "default_title": "Lattize"
-  },
+  "version": "1.0.0",
+  "devtools_page": "src/devtools/devtools.html",
+  "action": { "default_popup": "index.html" },
+  "content_scripts": [
+    {
+      "js": ["src/content.jsx"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "side_panel": {
-    "default_path": "sidepanel/sidepanel.html"
+    "default_path": "src/sidepanel/sidepanel.html"
   },
-  "permissions": ["activeTab", "scripting", "sidePanel", "tabGroups"],
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "sidePanel",
+    "system.cpu",
+    "system.memory",
+    "tabGroups"
+  ],
   "icons": {
-    "16": "logo.png",
-    "32": "logo.png",
-    "48": "logo.png",
-    "128": "logo.png"
+    "16": "public/logo.png",
+    "32": "public/logo.png",
+    "48": "public/logo.png",
+    "128": "public/logo.png"
   }
 }

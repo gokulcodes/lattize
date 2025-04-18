@@ -21,3 +21,30 @@ A Chrome DevTools extension that shows overall performance metrics of any websit
 - Show how this like is view across different apps like whatsapp, facebook, linkedIn, twitter while sharing. As these SEO tags like OG:title,OG:description, OG:image etc. are used for getting the information about the HTML page. Refer [https://ogp.me/]
 - Total call stack operations performed so far.
 - Feed all these mistakes to q/a model and show’s results. Don’t upload any sensitive information about the website
+
+## Chrome APIs
+- chrome.processes
+- chrome.system
+- chrome.webRequests
+- chrome.dom
+- chrome.events
+- chrome.performance
+- chrome.recorder
+- chrome.power
+- chrome.idle
+- chrome.search
+- chrome.storage
+- chrome.topSites
+- chrome.tts
+- chrome.omnibox
+- chrome.pageCapture
+- chrome.tabCapture
+- chrome.history
+- chrome.cookies
+- chrome.contextMenus
+- chrome.runtime
+
+## Get Started
+```
+npm run build
+```
