@@ -1,39 +1,17 @@
-import lattizeLogo from "/logo.png";
-import "./App.css";
-
-const tabs = [
-  {
-    id: 1,
-    title: "DOM",
-  },
-  {
-    id: 2,
-    title: "Network",
-  },
-  {
-    id: 3,
-    title: "System",
-  },
-  {
-    id: 4,
-    title: "SEO",
-  },
-];
+// import lattizeLogo from "/logo.png";
+// import "./App.css";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
-      <div>
+      <Header />
+      {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={lattizeLogo} className="logo" alt="Vite logo" />
         </a>
       </div>
-      <h1>Lattize</h1>
-      <div style={{ display: "flex", gap: 10 }}>
-        {tabs.map((tab) => {
-          return <div>{tab.title}</div>;
-        })}
-      </div>
+      <h1>Lattize</h1> */}
     </>
   );
 }
