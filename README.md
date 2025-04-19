@@ -4,8 +4,10 @@
 A Chrome DevTools extension that shows overall performance metrics of any website. 
 
 ## Requirements
-- Visualizer for DOM Tree and it’s dependent CSS and API calls attached to it.
 - Total number of nodes rendered
+- Total memory consumed for rendering [RAM]
+- System Specs [cores, CPU, model]
+- Visualizer for DOM Tree and it’s dependent CSS and API calls attached to it.
 - Maximum depth of DOM tree
 - Total time for HTML[DOM] and CSS[CSSOM] parsing
 - Time taken to render each children in DOM Tree
@@ -14,7 +16,6 @@ A Chrome DevTools extension that shows overall performance metrics of any websit
 - Simultaneous Visualization for APIs - Listen to all network made by the app during rendering.
 - Detailed description of each API, time taken, is it blocking call etc?
 - Tag cached response for each request for html download, images, JSON etc
-- Total memory consumed for rendering [RAM]
 - Total data consumed for downloading resources and also specify size for each downloads
 - Security violations
 - Accessibility recommendations

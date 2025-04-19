@@ -1,10 +1,26 @@
-import { useState } from "react";
 import lattizeLogo from "/logo.png";
 import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0);
+const tabs = [
+  {
+    id: 1,
+    title: "DOM",
+  },
+  {
+    id: 2,
+    title: "Network",
+  },
+  {
+    id: 3,
+    title: "System",
+  },
+  {
+    id: 4,
+    title: "SEO",
+  },
+];
 
+function App() {
   return (
     <>
       <div>
@@ -13,10 +29,10 @@ function App() {
         </a>
       </div>
       <h1>Lattize</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <div style={{ display: "flex", gap: 10 }}>
+        {tabs.map((tab) => {
+          return <div>{tab.title}</div>;
+        })}
       </div>
     </>
   );
