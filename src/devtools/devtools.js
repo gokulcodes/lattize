@@ -7,6 +7,27 @@ chrome.devtools.panels.create(
   }
 );
 
+chrome.devtools.inspectedWindow.eval(
+  "getEventListeners(document.body)",
+  (result) => {
+    console.log(result);
+    // setState(Object.keys(result).length);
+  }
+);
+
+// chrome.devtools.network.onRequestFinished.addListener((request) => {
+//   // let jsFiles = chrome.storage.local.get(["jsFiles"]);
+//   // let cssFiles = chrome.storage.local.get(["cssFiles"]);
+//   // console.log(jsFiles, cssFiles);
+//   // if (request.request.url.indexOf(".js") !== -1) {
+//   //   chrome.storage.local.set({ jsFiles: jsFiles + 1 });
+//   // }
+//   // if (request.request.url.indexOf(".css") !== -1) {
+//   //   chrome.storage.local.set({ cssFiles: cssFiles + 1 });
+//   // }
+//   console.log("URL:", request.request.url);
+// });
+
 chrome.contextMenus.create({
   id: "lattize",
   title: "Lattize",

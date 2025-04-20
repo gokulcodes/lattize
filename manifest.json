@@ -7,8 +7,9 @@
   "action": { "default_popup": "index.html" },
   "content_scripts": [
     {
-      "js": ["src/content.jsx"],
-      "matches": ["<all_urls>"]
+      "js": ["src/content.js"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_start"
     }
   ],
   "web_accessible_resources": [
@@ -26,6 +27,9 @@
     "contextMenus",
     "sidePanel",
     "system.cpu",
+    "system.storage",
+    "storage",
+    "tabs",
     "system.memory",
     "tabGroups"
   ],
