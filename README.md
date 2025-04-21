@@ -58,3 +58,9 @@ A Chrome DevTools extension that shows overall performance metrics of any websit
     * Click on Load Unpacked
     * Point the dist/ folder in the folder picker
     * Lattize will be accessible from devtools
+
+Previews:
+![Lattize](https://github.com/gokulcodes/lattize/blob/main/public/preview/dom.png?raw=true 'Lattize')
+![Lattize](https://github.com/gokulcodes/lattize/blob/main/public/preview/SEO.png?raw=true 'Lattize')
+![Lattize](https://github.com/gokulcodes/lattize/blob/main/public/preview/network.png?raw=true 'Lattize')
+![Lattize](https://github.com/gokulcodes/lattize/blob/main/public/preview/system.png?raw=true 'Lattize')
