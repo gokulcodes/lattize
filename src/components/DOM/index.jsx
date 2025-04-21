@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 function MetricCards({ title, func, initialNumber }) {
   const [number, setNumber] = useState(initialNumber);
   func(setNumber);
@@ -27,6 +26,7 @@ export default function DOM() {
   const [cssChunks, setCSSChunks] = useState(new Set([]));
   const [htmlParsingTime, setHtmlParsingTime] = useState(0);
   const [cssParsingTime, setCssParsingTime] = useState(0);
+  // const [tree, setTree] = useState([]);
   const stats = [
     {
       id: 1,
@@ -85,6 +85,19 @@ export default function DOM() {
   ];
 
   function updateTotalNodes(setState) {
+    function handleTree(parsedHtml) {
+      if (parsedHtml?.childNodes.length == 0) {
+        return [];
+      }
+
+      let nodes = [];
+      for (let child of parsedHtml.childNodes) {
+        nodes.push([{ node: child, children: handleTree(child) }]);
+      }
+
+      return nodes;
+    }
+
     function handleNodeCalculations(parsedHtml) {
       if (parsedHtml?.childNodes.length == 0) {
         return 0;
@@ -104,7 +117,10 @@ export default function DOM() {
         const toNodes = (html) =>
           new DOMParser().parseFromString(html, "text/html");
         let nodes = handleNodeCalculations(toNodes(result).body);
+        let treeList = handleTree(toNodes(result));
+        console.log(treeList);
         setState(nodes);
+        // setTree(treeList);
       }
     );
   }

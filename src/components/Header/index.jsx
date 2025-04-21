@@ -18,10 +18,10 @@ const tabs = [
     id: 4,
     title: "SEO",
   },
-  {
-    id: 5,
-    title: "Security",
-  },
+  // {
+  //   id: 5,
+  //   title: "Security",
+  // },
 ];
 
 export default function Header() {
