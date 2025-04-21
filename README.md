@@ -24,28 +24,37 @@ A Chrome DevTools extension that shows overall performance metrics of any websit
 - Feed all these mistakes to q/a model and show’s results. Don’t upload any sensitive information about the website
 
 ## Chrome APIs
-- chrome.processes
-- chrome.system
-- chrome.webRequests
-- chrome.dom
-- chrome.events
-- chrome.performance
-- chrome.recorder
-- chrome.power
-- chrome.idle
-- chrome.search
-- chrome.storage
-- chrome.topSites
-- chrome.tts
-- chrome.omnibox
-- chrome.pageCapture
-- chrome.tabCapture
-- chrome.history
-- chrome.cookies
-- chrome.contextMenus
-- chrome.runtime
+* These are the API used to develop Lattize extension
+    - chrome.processes
+    - chrome.system
+    - chrome.webRequests
+    - chrome.dom
+    - chrome.events
+    - chrome.performance
+    - chrome.recorder
+    - chrome.power
+    - chrome.idle
+    - chrome.search
+    - chrome.storage
+    - chrome.topSites
+    - chrome.tts
+    - chrome.omnibox
+    - chrome.pageCapture
+    - chrome.tabCapture
+    - chrome.history
+    - chrome.cookies
+    - chrome.contextMenus
+    - chrome.runtime
 
 ## Get Started
-```
-npm run build
-```
+- After cloning the repo, Run the following command:
+    ```
+    npm install
+    npm run build
+    ```
+
+- dist/ folder will be generated in the root path
+    * Go to chrome, enable developer mode
+    * Click on Load Unpacked
+    * Point the dist/ folder in the folder picker
+    * Lattize will be accessible from devtools
