@@ -32,5 +32,5 @@ document.addEventListener("DOMContentLoaded", function () {
 //   // }
 //   console.log("URL:", request.request.url);
 // });
-console.log(chrome.system.cpu.getInfo());
-console.log(chrome.system.memory.getInfo());
+// console.log(chrome.system.cpu.getInfo());
+// console.log(chrome.system.memory.getInfo());
